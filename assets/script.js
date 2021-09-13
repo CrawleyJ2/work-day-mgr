@@ -28,9 +28,17 @@ $(document).ready(function() {
   $("#hour17 .description").val(localStorage.getItem("hour17"));
 });
 
+// conditional highlighting of time blocks based on current time
 $(document).ready(function() {
   $('textarea').each(function() {
-    console.log(currentHour);
     console.log(parseInt($(this).attr('time')));
-  })
+
+    if (currentHour === parseInt($(this).attr('time'))) {
+      $(this).addClass('present');
+    } else if (currentHour > parseInt($(this).attr('time'))) {
+      $(this).addClass('past');
+    } else if (currentHour < parseInt($(this).attr('time'))) {
+      $(this).addClass('future');
+    }
+  });
 });

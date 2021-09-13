@@ -27,3 +27,10 @@ $(document).ready(function() {
   $("#hour16 .description").val(localStorage.getItem("hour16"));
   $("#hour17 .description").val(localStorage.getItem("hour17"));
 });
+
+$(document).ready(function() {
+  $('textarea').each(function() {
+    console.log(currentHour);
+    console.log(parseInt($(this).attr('time')));
+  })
+});

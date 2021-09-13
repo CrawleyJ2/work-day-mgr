@@ -8,11 +8,6 @@
 
   ![Example of Page](./assets/SampleShot.png)
 
-  ## Table of Contents
-
-  * [Live App](#live_app)
-  * [Questions](#questions)
-
   ## Live APP
 
   To see this app in action, click [here](https://crawleyj2.github.io/work-day-mgr/).
